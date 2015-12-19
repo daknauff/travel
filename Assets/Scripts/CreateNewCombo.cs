@@ -30,7 +30,7 @@ public class CreateNewCombo : MonoBehaviour {
         {
             render = doelvakken[doelen].gameObject.GetComponent<Renderer>();
             Color nieuwekleur = kleuren[Random.Range(0, kleuren.Count)];
-            huidigecode.huidigecombinatie.Add(nieuwekleur);
+            
             render.material.color = nieuwekleur;
            
         }
