@@ -1,18 +1,34 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class selectbal : MonoBehaviour {
     public GameObject selected;
+    public Material main;
+    public Material metallic;
 
 	// Use this for initialization
 	void Start () {
 	
 	}
-    public void balkeuze(PointerEventData eventData)
+    public void balkeuze()
     {
         print("klikt");
         selected = this.gameObject;
+        
+        SetSelectedGameObject();
+        selected.GetComponent<Renderer>().material.SetInt("Metallic", 5);
+        
+    }
+
+    public void OnSelect()
+    {
+        print("select");
+    }
+    public void OnDeselect()
+    {
+        print("deselect");
     }
 
     // Update is called once per frame
