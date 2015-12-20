@@ -5,24 +5,33 @@ public static class controller
 {
     public static GameObject geselecteerd;
     public static Color tempcolor;
-    public static Color selectcolor=Color.red;
+    public static Color selectcolor;
+    public static GameObject cirkel;
+    
 
-    static void selecteer( GameObject GO)
+    public static void selecteer( GameObject GO)
     {
         if (geselecteerd != GO)
         {
-            if (geselecteerd=null)
+            cirkel = GameObject.FindGameObjectWithTag("cirkel");
+            if (geselecteerd==null)
             {
                 geselecteerd = GO;
                 tempcolor = GO.GetComponent<Renderer>().material.color;
+                selectcolor = tempcolor;
+                selectcolor.a = 125f;
                 GO.GetComponent<Renderer>().material.color=selectcolor;
-            }
+                cirkel.transform.position = GO.transform.position;
+                           }
             else
             {
                 geselecteerd.GetComponent<Renderer>().material.color = tempcolor;
                 geselecteerd = GO;
                 tempcolor = GO.GetComponent<Renderer>().material.color;
+                selectcolor = tempcolor;
+                selectcolor.a = 125f;
                 GO.GetComponent<Renderer>().material.color = selectcolor;
+                cirkel.transform.position = GO.transform.position;
             }
         }
     }
