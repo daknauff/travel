@@ -31,7 +31,7 @@ GameObject:
   - 23: {fileID: 2355672}
   m_Layer: 0
   m_Name: Keuzevak_vloerA
-  m_TagString: Untagged
+  m_TagString: droptarget
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49,7 +49,7 @@ GameObject:
   - 23: {fileID: 2381744}
   m_Layer: 0
   m_Name: Keuzevak_vloerB
-  m_TagString: Untagged
+  m_TagString: droptarget
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67,7 +67,7 @@ GameObject:
   - 23: {fileID: 2344374}
   m_Layer: 0
   m_Name: Keuzevak_vloerC
-  m_TagString: Untagged
+  m_TagString: droptarget
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,7 +100,7 @@ GameObject:
   - 23: {fileID: 2311888}
   m_Layer: 0
   m_Name: Keuzevak_vloerD
-  m_TagString: Untagged
+  m_TagString: droptarget
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
