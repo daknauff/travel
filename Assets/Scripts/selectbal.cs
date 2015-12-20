@@ -8,30 +8,12 @@ public class selectbal : MonoBehaviour {
     public Material main;
     public Material metallic;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
+    }
 	
-	}
-    public void balkeuze()
-    {
-        print("klikt");
-        selected = this.gameObject;
-        
-        SetSelectedGameObject();
-        selected.GetComponent<Renderer>().material.SetInt("Metallic", 5);
-        
-    }
-
-    public void OnSelect()
-    {
-        print("select");
-    }
-    public void OnDeselect()
-    {
-        print("deselect");
-    }
-
-    // Update is called once per frame
+	
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -39,6 +21,7 @@ public class selectbal : MonoBehaviour {
 
             RaycastHit hitInfo;
             selected = GetClickedObject(out hitInfo);
+            controller.selecteer(selected);
 
         }
 

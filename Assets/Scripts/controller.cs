@@ -5,16 +5,19 @@ public static class controller
 {
     public static GameObject geselecteerd;
     public static Color tempcolor;
-    public static Color selectcolor=Color.red;
+    public static Color selectcolor;
+    
 
-    static void selecteer( GameObject GO)
+    public static void selecteer( GameObject GO)
     {
         if (geselecteerd != GO)
         {
-            if (geselecteerd=null)
+            if (geselecteerd==null)
             {
                 geselecteerd = GO;
                 tempcolor = GO.GetComponent<Renderer>().material.color;
+                selectcolor = tempcolor;
+                selectcolor.a = 125f;
                 GO.GetComponent<Renderer>().material.color=selectcolor;
             }
             else
@@ -22,6 +25,8 @@ public static class controller
                 geselecteerd.GetComponent<Renderer>().material.color = tempcolor;
                 geselecteerd = GO;
                 tempcolor = GO.GetComponent<Renderer>().material.color;
+                selectcolor = tempcolor;
+                selectcolor.a = 125f;
                 GO.GetComponent<Renderer>().material.color = selectcolor;
             }
         }
