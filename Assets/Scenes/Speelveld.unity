@@ -1721,6 +1721,26 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 8e0c1863984df4bb9994cb8da1b21270, type: 2}
+    - target: {fileID: 11401862, guid: d79f1daf7d49a4e79900175a49fef31d, type: 2}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1874390800}
+    - target: {fileID: 11401862, guid: d79f1daf7d49a4e79900175a49fef31d, type: 2}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: balkeuze
+      objectReference: {fileID: 0}
+    - target: {fileID: 11401862, guid: d79f1daf7d49a4e79900175a49fef31d, type: 2}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 11476628, guid: d79f1daf7d49a4e79900175a49fef31d, type: 2}
+      propertyPath: metallic
+      value: 
+      objectReference: {fileID: 2100000, guid: ebf10d24c5470834c939a7f2d57f3f09, type: 2}
+    - target: {fileID: 11476628, guid: d79f1daf7d49a4e79900175a49fef31d, type: 2}
+      propertyPath: main
+      value: 
+      objectReference: {fileID: 2100000, guid: 942ba803ece8f4065ae9449aa35c6794, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d79f1daf7d49a4e79900175a49fef31d, type: 2}
   m_IsPrefabParent: 0
@@ -3327,6 +3347,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1874390799}
   - 114: {fileID: 1874390798}
+  - 114: {fileID: 1874390800}
   m_Layer: 0
   m_Name: AIcontroller
   m_TagString: Untagged
@@ -3370,6 +3391,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
+--- !u!114 &1874390800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1874390797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c25dd3f9ed237f48a6eb7f6eee77a05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selected: {fileID: 0}
+  main: {fileID: 2100000, guid: 942ba803ece8f4065ae9449aa35c6794, type: 2}
+  metallic: {fileID: 2100000, guid: ebf10d24c5470834c939a7f2d57f3f09, type: 2}
 --- !u!1 &1875557874
 GameObject:
   m_ObjectHideFlags: 0
