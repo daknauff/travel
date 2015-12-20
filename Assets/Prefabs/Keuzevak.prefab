@@ -29,6 +29,7 @@ GameObject:
   - 33: {fileID: 3387410}
   - 65: {fileID: 6584004}
   - 23: {fileID: 2355672}
+  - 114: {fileID: 11426616}
   m_Layer: 0
   m_Name: Keuzevak_vloerA
   m_TagString: droptarget
@@ -47,6 +48,7 @@ GameObject:
   - 33: {fileID: 3330444}
   - 65: {fileID: 6580464}
   - 23: {fileID: 2381744}
+  - 114: {fileID: 11423134}
   m_Layer: 0
   m_Name: Keuzevak_vloerB
   m_TagString: droptarget
@@ -65,6 +67,7 @@ GameObject:
   - 33: {fileID: 3317664}
   - 65: {fileID: 6509056}
   - 23: {fileID: 2344374}
+  - 114: {fileID: 11495722}
   m_Layer: 0
   m_Name: Keuzevak_vloerC
   m_TagString: droptarget
@@ -98,6 +101,7 @@ GameObject:
   - 33: {fileID: 3335410}
   - 65: {fileID: 6551346}
   - 23: {fileID: 2311888}
+  - 114: {fileID: 11449448}
   m_Layer: 0
   m_Name: Keuzevak_vloerD
   m_TagString: droptarget
@@ -863,6 +867,54 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &11423134
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 127758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec644c948d2b9964396243008e3587fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zitop: {fileID: 0}
+--- !u!114 &11426616
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 105950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec644c948d2b9964396243008e3587fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zitop: {fileID: 0}
+--- !u!114 &11449448
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 139944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec644c948d2b9964396243008e3587fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zitop: {fileID: 0}
+--- !u!114 &11495722
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 128824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec644c948d2b9964396243008e3587fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zitop: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
