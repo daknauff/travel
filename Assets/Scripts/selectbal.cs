@@ -9,9 +9,9 @@ public class selectbal : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        kleurkeuzenballen();
+        //kleurkeuzenballen();
         cirkel = GameObject.FindGameObjectWithTag("cirkel");
-       
+      //rr 
     }
 	
 	
