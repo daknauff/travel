@@ -36,18 +36,16 @@ public class dragdrop : MonoBehaviour {
         {
             RaycastHit hitInfo;
             GameObject _totarget = GetClickedObject(out hitInfo);
-            print(_totarget.tag);
             _mouseState = false;
             if (_totarget.tag != "droptarget")
                
             {
                 target.transform.position = _begindragpos;
-                print("not droptarget");
             }
             else
             {
                 print(target.name+ " and " + _totarget.name);
-                Vector3 temppos = _totarget.transform.position + Vector3.up;
+                Vector3 temppos = _totarget.transform.position + new Vector3(0,0.5f,0);
                 //temppos.y = -3.22561f;
                 target.transform.position = temppos;
             }

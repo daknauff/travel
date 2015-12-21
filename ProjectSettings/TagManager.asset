@@ -6,7 +6,9 @@ TagManager:
   tags:
   - dragble
   - droptarget
-  - New Tag
+  - cirkel
+  - aicontroller
+  - kleurkeuzes
   layers:
   - Default
   - TransparentFX
