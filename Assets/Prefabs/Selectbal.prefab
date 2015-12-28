@@ -11,6 +11,7 @@ GameObject:
   - 33: {fileID: 3389316}
   - 135: {fileID: 13532842}
   - 23: {fileID: 2343010}
+  - 114: {fileID: 11417110}
   m_Layer: 0
   m_Name: Selectbal
   m_TagString: Untagged
@@ -63,6 +64,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 158190}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &11417110
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 158190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e37c25bc643e942bda841e5b9a4358, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position: 0
 --- !u!135 &13532842
 SphereCollider:
   m_ObjectHideFlags: 1
