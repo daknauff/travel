@@ -6,6 +6,7 @@ public class CreateNewCombo : MonoBehaviour {
     public int lengtecombi;
     public List<Color> kleuren;
     public GameObject[] doelvakken;
+    public bool debug = false;
 
 
     Renderer render;
@@ -21,7 +22,14 @@ public class CreateNewCombo : MonoBehaviour {
 
     void Update()
     {
-      
+      if (debug)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                nieuwecombinatie();
+            }
+
+        }
     }
 
     void  nieuwecombinatie()
