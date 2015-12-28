@@ -9,6 +9,12 @@ public static class controller
     public static Color selectcolor;
     public static GameObject cirkel;
     public static bool isdebug=false;
+
+
+    public static void Maakleegselected()
+    {
+        geselecteerd = null;
+    }
     
 
     public static void selecteer( GameObject GO)
