@@ -33,8 +33,7 @@ public class selectbal : MonoBehaviour {
                 if (selected.tag == "droptarget")
                 {
                     //spawn ball in selected vakje
-                    selected.transform.GetChild(0).GetComponent<MeshRenderer>().enabled = true;
-                    selected.transform.GetChild(0).GetComponent<Renderer>().material.color= controller.geselecteerd.GetComponent<Renderer>().material.color;
+                    selected.GetComponent<Renderer>().material.color= controller.geselecteerd.GetComponent<Renderer>().material.color;
                 }
             }
            

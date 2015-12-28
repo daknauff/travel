@@ -2,11 +2,9 @@
 using System.Collections.Generic;
 
 public class CreateNewCombo : MonoBehaviour {
-
-    public int lengtecombi;
     public List<Color> kleuren;
     public GameObject[] doelvakken;
-    public bool debug = false;
+    
 
 
     Renderer render;
@@ -18,11 +16,12 @@ public class CreateNewCombo : MonoBehaviour {
     {
 
         nieuwecombinatie();
+       
     }
 
     void Update()
     {
-      if (debug)
+      if (controller.isdebug)
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
@@ -31,6 +30,8 @@ public class CreateNewCombo : MonoBehaviour {
 
         }
     }
+
+   
 
     void  nieuwecombinatie()
     {

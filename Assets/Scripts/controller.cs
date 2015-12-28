@@ -1,12 +1,14 @@
 using UnityEngine;
 using System.Collections;
 
+
 public static class controller
 {
     public static GameObject geselecteerd;
     public static Color tempcolor;
     public static Color selectcolor;
     public static GameObject cirkel;
+    public static bool isdebug=false;
     
 
     public static void selecteer( GameObject GO)
