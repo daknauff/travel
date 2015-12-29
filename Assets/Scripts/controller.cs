@@ -27,7 +27,7 @@ public static class controller
                 geselecteerd = GO;
                 tempcolor = GO.GetComponent<Renderer>().material.color;
                 selectcolor = tempcolor;
-                selectcolor.a = 125f;
+                //selectcolor.a = 125f;
                 GO.GetComponent<Renderer>().material.color=selectcolor;
                 cirkel.transform.position = GO.transform.position;
                            }
@@ -37,7 +37,7 @@ public static class controller
                 geselecteerd = GO;
                 tempcolor = GO.GetComponent<Renderer>().material.color;
                 selectcolor = tempcolor;
-                selectcolor.a = 125f;
+                //selectcolor.a = 125f;
                 GO.GetComponent<Renderer>().material.color = selectcolor;
                 cirkel.transform.position = GO.transform.position;
             }
