@@ -9,9 +9,9 @@ public class selectbal : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        kleurkeuzenballen();
+        //kleurkeuzenballen();
         cirkel = GameObject.FindGameObjectWithTag("cirkel");
-       
+      //rr 
     }
 	
 	
@@ -22,19 +22,23 @@ public class selectbal : MonoBehaviour {
 
             RaycastHit hitInfo;
             selected = GetClickedObject(out hitInfo);
-            if (selected.tag == "dragble")
+            if (selected != null)
             {
-                cirkel.GetComponent<SpriteRenderer>().enabled = true;
-                controller.selecteer(selected);
-            }
-            else
-            {
-                cirkel.GetComponent<SpriteRenderer>().enabled = false;
-                if (selected.tag == "droptarget")
+                if (selected.tag == "dragble")
                 {
-                    //spawn ball in selected vakje
-                    selected.transform.GetChild(0).GetComponent<MeshRenderer>().enabled = true;
-                    selected.transform.GetChild(0).GetComponent<Renderer>().material.color= controller.geselecteerd.GetComponent<Renderer>().material.color;
+                    cirkel.GetComponent<SpriteRenderer>().enabled = true;
+                    controller.selecteer(selected);
+                }
+                else
+                {
+                    cirkel.GetComponent<SpriteRenderer>().enabled = false;
+                    if (selected.tag == "droptarget" && controller.geselecteerd != null)
+                    {
+                        //spawn ball in selected vakje
+                        selected.GetComponent<Renderer>().material.color = controller.geselecteerd.GetComponent<Renderer>().material.color;
+                        huidigecode.selectedsetcoloroppos(selected.GetComponent<Position>().position, controller.geselecteerd.GetComponent<Renderer>().material.color);
+                        controller.Maakleegselected();  
+                    }
                 }
             }
            
@@ -50,7 +54,7 @@ public class selectbal : MonoBehaviour {
         {
             target = hit.collider.gameObject;
         }
-
+       
         return target;
     }
 
