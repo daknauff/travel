@@ -5,6 +5,7 @@ using System.Linq;
 public class checkguess : MonoBehaviour {
     public List<Color> guess;
     public List<Color> mastercode;
+    LaatResultaatZien laatresultaatzien;
     
     public int aantalwit;
     
@@ -12,11 +13,14 @@ public class checkguess : MonoBehaviour {
 
     void Start()
     {
+        laatresultaatzien = GetComponent<LaatResultaatZien>();
         guess = new List<Color>();
         mastercode = new List<Color>();
     }
     public void Docheck()
     {
+        laatresultaatzien.resultaatbar[controller.turn].SetActive(true);
+        laatresultaatzien.resultaatbar[controller.turn].
         aantalwit = 0;
         aantalzwart = 0;
         kleurentoevoegenlist();
