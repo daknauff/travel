@@ -19,23 +19,31 @@ public class checkguess : MonoBehaviour {
     }
     public void Docheck()
     {
-        laatresultaatzien.resultaatbar[controller.turn].SetActive(true);
-        laatresultaatzien.resultaatbar[controller.turn].
-        aantalwit = 0;
-        aantalzwart = 0;
+        string findname = "ShowResultaat (" + controller.turn + ")";
+        Transform result= transform.FindChild(findname);
+        result.gameObject.SendMessage("ScoreSetter");
+ 
+        int[] peg = new int[4];
         kleurentoevoegenlist();
         for (int i = 0; i < guess.Count; i++)
         {
             if (guess[i] == mastercode[i])
             {
-                aantalwit++;
+                peg[i] = 0;
             }
             else if (mastercode.Contains(guess[i]))
             {
-                aantalzwart++;
+                peg[i] = 1;
+            }
+            else
+            {
+                peg[i] = 2;
             }
         }
-
+   }
+    public struct scores
+    {
+        
     }
 
    void  kleurentoevoegenlist()
