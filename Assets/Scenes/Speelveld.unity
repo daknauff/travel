@@ -232,11 +232,10 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 69518405}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -158.28772, y: -223.03337, z: 1}
+  m_LocalPosition: {x: -158.28772, y: -128.3, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 381664224}
-  - {fileID: 421615462}
   - {fileID: 298315129}
   m_Father: {fileID: 871252427}
   m_RootOrder: 9
@@ -485,13 +484,14 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 421615462}
   m_Father: {fileID: 69518406}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 218.28772, y: 520.0334}
-  m_SizeDelta: {x: 370, y: 239}
+  m_SizeDelta: {x: 370, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &298315130
 MonoBehaviour:
@@ -600,15 +600,15 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 381664223}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 69518406}
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 218.28772, y: 520.0334}
-  m_SizeDelta: {x: 390, y: 260}
+  m_AnchoredPosition: {x: 218.28773, y: 520.0334}
+  m_SizeDelta: {x: 390, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &381664225
 MonoBehaviour:
@@ -667,14 +667,14 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 421615461}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalPosition: {x: 0, y: 0, z: -2.0000162}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 69518406}
-  m_RootOrder: 1
+  m_Father: {fileID: 298315129}
+  m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 219.28772, y: 491.0334}
+  m_AnchoredPosition: {x: 1.0000188, y: 2.2}
   m_SizeDelta: {x: 322, y: 57}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &421615463
@@ -698,20 +698,18 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: c61440c95a45a44519e471d686420d6c, type: 3}
-    m_FontSize: 20
-    m_FontStyle: 0
+    m_FontSize: 30
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '* Selecteer een gekleurde bal
-
-    * Klik op de plaats van je keuze'
+  m_Text: Breek de Code!
 --- !u!222 &421615464
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2910,7 +2908,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '# beurt/geldbedrag (script?!)'
+  m_Text: Beurt 1
 --- !u!222 &1730200457
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3407,7 +3405,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Resultaat vorige beurt (script)
+  m_Text: 
 --- !u!222 &2095890838
 CanvasRenderer:
   m_ObjectHideFlags: 0
