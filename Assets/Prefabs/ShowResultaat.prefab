@@ -154,6 +154,7 @@ GameObject:
   - 33: {fileID: 3395474}
   - 65: {fileID: 6526374}
   - 23: {fileID: 2341612}
+  - 114: {fileID: 11472680}
   m_Layer: 0
   m_Name: Scorebooard
   m_TagString: Untagged
@@ -1531,6 +1532,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   position: 0
+--- !u!114 &11472680
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 136932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f70ba73054b91d24dac1bc0bfc431909, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!135 &13518356
 SphereCollider:
   m_ObjectHideFlags: 1
