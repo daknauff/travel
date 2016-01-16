@@ -19,28 +19,32 @@ public class checkguess : MonoBehaviour {
     }
     public void Docheck()
     {
-        string findname = "ShowResultaat (" + controller.turn + ")";
-        Transform result= transform.FindChild(findname);
-        result.gameObject.SendMessage("ScoreSetter");
- 
-        int[] peg = new int[4];
+
+        Transform showresultaat = GameObject.Find("ShowResultaatholder").transform.GetChild(controller.turn);
+        showresultaat.gameObject.SetActive(true);
+
+        ScoreSetter set = showresultaat.transform.GetChild(1).GetComponent<ScoreSetter>();
+        
+
+       
         kleurentoevoegenlist();
         for (int i = 0; i < guess.Count; i++)
         {
             if (guess[i] == mastercode[i])
             {
-                peg[i] = 0;
+                controller.peg[i] = 0;
             }
             else if (mastercode.Contains(guess[i]))
             {
-                peg[i] = 1;
+                controller.peg[i] = 1;
             }
             else
             {
-                peg[i] = 2;
+                controller.peg[i] = 2;
             }
         }
-   }
+        set.setscore();
+    }
     public struct scores
     {
         

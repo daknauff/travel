@@ -10,6 +10,9 @@ public static class controller
     public static GameObject cirkel;
     public static bool isdebug=false;
     public static int turn = 0;
+    public static int[] peg= new int[4];
+
+    
 
 
     public static void Maakleegselected()
