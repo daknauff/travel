@@ -5,7 +5,6 @@ using System.Linq;
 public class checkguess : MonoBehaviour {
     public List<Color> guess;
     public List<Color> mastercode;
-    LaatResultaatZien laatresultaatzien;
     
     public int aantalwit;
     
@@ -13,37 +12,26 @@ public class checkguess : MonoBehaviour {
 
     void Start()
     {
-        laatresultaatzien = GetComponent<LaatResultaatZien>();
         guess = new List<Color>();
         mastercode = new List<Color>();
     }
     public void Docheck()
     {
-        string findname = "ShowResultaat (" + controller.turn + ")";
-        Transform result= transform.FindChild(findname);
-        result.gameObject.SendMessage("ScoreSetter");
- 
-        int[] peg = new int[4];
+        aantalwit = 0;
+        aantalzwart = 0;
         kleurentoevoegenlist();
         for (int i = 0; i < guess.Count; i++)
         {
             if (guess[i] == mastercode[i])
             {
-                peg[i] = 0;
+                aantalwit++;
             }
             else if (mastercode.Contains(guess[i]))
             {
-                peg[i] = 1;
-            }
-            else
-            {
-                peg[i] = 2;
+                aantalzwart++;
             }
         }
-   }
-    public struct scores
-    {
-        
+
     }
 
    void  kleurentoevoegenlist()
