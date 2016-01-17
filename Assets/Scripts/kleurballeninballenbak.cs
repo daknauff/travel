@@ -1,37 +1,24 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class kleurballeninballenbak : MonoBehaviour {
+public class KleurBallenInBallenbak : MonoBehaviour {
     public GameObject[] ballenuitballenbak;
    
 
-    CreateNewCombo createnewcombo;
-
-    void Awake()
+ 
+    public void paintballs()
     {
-        createnewcombo = GetComponent<CreateNewCombo>();
-    }
-    void Start () {
-        paintballs();
-    }
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-    void paintballs()
-    {
-        if (createnewcombo.kleuren.Count == ballenuitballenbak.Length)
+        if (controller.kleuren.Count == ballenuitballenbak.Length)
         {
 
-            for (int i = 0; i < createnewcombo.kleuren.Count; i++)
+            for (int i = 0; i < controller.kleuren.Count; i++)
             {
-                ballenuitballenbak[i].GetComponent<Renderer>().material.color = createnewcombo.kleuren[i];
+                ballenuitballenbak[i].GetComponent<Renderer>().material.color = controller.kleuren[i];
             }
         }
         else if(controller.isdebug)
         {
-            Debug.Log("het aantal kleuren:" + createnewcombo.kleuren.Count + " en het aantal ballen:" + ballenuitballenbak.Length + " komen niet overeen");
+            Debug.Log("het aantal kleuren:" + controller.kleuren.Count + " en het aantal ballen:" + ballenuitballenbak.Length + " komen niet overeen");
         }
     }
 }

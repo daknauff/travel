@@ -57,11 +57,11 @@ public class selectbal : MonoBehaviour {
        
         return target;
     }
-
+/*
     void kleurkeuzenballen()
     {
         GameObject aicontroller = GameObject.FindGameObjectWithTag("aicontroller");
-        List<Color> kleuren = aicontroller.GetComponent<CreateNewCombo>().kleuren;
+       // List<Color> kleuren = aicontroller.GetComponent<CreateNewCombo>().kleuren;
         GameObject ballen = GameObject.FindGameObjectWithTag("kleurkeuzes");
         if (kleuren.Count == ballen.transform.childCount)
         {
@@ -75,4 +75,5 @@ public class selectbal : MonoBehaviour {
             Debug.Log("aantal kleuren en ballen komen niet overeen!");
         }
     }
+    */
 }
